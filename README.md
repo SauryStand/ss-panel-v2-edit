@@ -1,4 +1,5 @@
 # ss-panel-v2-edit
+Welcome to the ss-panel-v2-edit wiki! 出自：http://www.qiaodows.com/phpzp/63.html
 此程序基于 orvice的ss-panel v2.5.1修改。
 修改内容：
 1.将mailgun发邮件方式修改为smtp，并使重置密码功能支持smtp发信（必须要php支持smtp模块才能使用smtp发信，若用的是别人的虚拟主机请找管理员解决，若自己用vps或服务器搭建网站请安装smtp模块或者安装lnmp等网站环境）。
