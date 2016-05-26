@@ -31,7 +31,7 @@ $check_min = 100;
 $check_max = 200;
 
 //name
-$site_name = "OTGW";
+$site_name = "SS-TTkea";
 $site_url  = "http://ss.ttkea.com";
 /**
  * 站点盐值，用于加密密码
