@@ -27,11 +27,13 @@ $Users = new Ss\User\User();
                                     <th>用户名</th>
                                     <th>邮箱</th>
                                     <th>端口</th>
+								    <th>套餐</th>
                                     <th>总流量</th>
                                     <th>剩余流量</th>
                                     <th>已使用流量</th>
-                                    <th>最后签到</th>
-                                    <th>邀请人</th>
+                                    <th>最后签到时间</th>
+                                    <th>最后使用时间</th>
+									<th>邀请人</th>
                                     <th>操作</th>
                                 </tr>
                                 <?php
@@ -57,10 +59,12 @@ if ( $rs['switch'] == 0 && $rs['enable'] == 0 ){
                                         <td><?php echo $rs['user_name']; ?></td>
                                         <td><?php echo $rs['email']; ?></td>
                                         <td><?php echo $rs['port']; ?></td>
+										<td><?php echo $rs['plan']; ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow($rs['transfer_enable']); ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['transfer_enable']-$rs['u']-$rs['d'])); ?></td>
                                         <td><?php \Ss\Etc\Comm::flowAutoShow(($rs['u']+$rs['d'])); ?></td>
                                         <td><?php echo date('Y-m-d H:i:s',$rs['last_check_in_time']); ?></td>
+										<td><?php echo date('Y-m-d H:i:s',$rs['t']); ?></td>
                                         <td>
 <?php 
 if ( $rs['ref_by'] != 0 ){
@@ -72,7 +76,7 @@ echo $ref_name;
 ?>
                                         </td>
                                         <td>
-                                            <a class="btn btn-info btn-sm" href="user_edit.php?uid=<?php echo $rs['uid']; ?>">查看</a>
+                                            <a class="btn btn-info btn-sm" href="user_edit.php?uid=<?php echo $rs['uid']; ?>">编辑</a>
                                             <?php 
 if ( $rs['switch'] == 1 && $rs['enable'] == 1 ){
    ?>

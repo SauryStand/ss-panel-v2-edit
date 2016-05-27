@@ -23,7 +23,7 @@ $node = new Ss\Node\Node();
                     <div class="box box-solid">
                         <div class="box-header">
                             <i class="fa fa-th-list"></i>
-                            <h3 class="box-title">测试节点</h3>
+                            <h3 class="box-title">免费节点 - 套餐A及套餐B用户可用</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="callout callout-warning">
@@ -66,12 +66,12 @@ $node = new Ss\Node\Node();
                     <div class="box box-solid">
                         <div class="box-header">
                             <i class="fa fa-code"></i>
-                            <h3 class="box-title">稳定节点</h3>
+                            <h3 class="box-title">VIP节点 - 套餐B用户可用</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="callout callout-warning">
                                 <h4>注意!</h4>
-                                <p>请勿在任何地方公开节点地址！</p>
+                                <p>请联系环聊购买：admin@ttkea.com</p>
                             </div><?php
                             $node1 = $node->NodesArray(1);
                             foreach($node1 as $row){

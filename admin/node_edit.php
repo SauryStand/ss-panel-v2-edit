@@ -82,7 +82,7 @@ if(!empty($_GET)){
                             </div>
 
                             <div class="form-group">
-                                <label for="cate_order">分类(0或者1)</label>
+                                <label for="cate_order">套餐(0或1：0为免费节点，1为VIP节点)</label>
                                 <input   class="form-control" name="node_type"  value="<?php echo $rs['node_type'];?>" >
                             </div>
 

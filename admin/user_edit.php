@@ -44,6 +44,7 @@ if(!empty($_GET)){
                                 <label for="cate_title">用户名</label>
                                 <input  class="form-control" id="name" value="<?php echo $rs['user_name'];?>" >
                             </div>
+							
 
                             <div class="form-group">
                                 <label for="cate_title">用户邮箱</label>
@@ -54,9 +55,14 @@ if(!empty($_GET)){
                                 <label for="cate_title">SS连接密码</label>
                                 <input  class="form-control" id="passwd" value="<?php echo $rs['passwd'];?>" >
                             </div>
-
+							
+							<div class="form-group">
+                                <label for="cate_title">连接端口</label>
+                                <input  class="form-control" id="port" value="<?php echo $rs['port'];?>" >
+                            </div>
+							
                             <div class="form-group">
-                                <label for="cate_title">设置流量</label>
+                                <label for="cate_title">设置流量，单位为G，直接输入数值</label>
                                 <input   class="form-control" id="transfer_enable"  value="<?php echo $rs['transfer_enable']/$togb;?>" placeholder="单位为GB，直接输入数值" >
                             </div>
                             
@@ -65,7 +71,17 @@ if(!empty($_GET)){
 
                                 <input  class="form-control" id="invite_num"  value="<?php echo $rs['invite_num'];?>"  >
                             </div>
-
+                            
+							<div class="form-group">
+                                <label for="cate_title">服务套餐（A=免费，B=VIP）</label>
+                                <input  class="form-control" id="plan" value="<?php echo $rs['plan'];?>" >
+                            </div>
+							
+							<div class="form-group">
+                                <label for="cate_title">余额</label>
+                                <input  class="form-control" id="money" value="<?php echo $rs['money'];?>" >
+                            </div>
+							
                         </div><!-- /.box-body -->
 
                         <div class="box-footer">
@@ -100,8 +116,11 @@ require_once '_footer.php'; ?>
                     uid: $("#uid").val(),
                     name: $("#name").val(),
                     email: $("#email").val(),
-                    passwd: $("#passwd").val(),
-                    transfer_enable: $("#transfer_enable").val() * 1024 * 1024 * 1024,
+                    passwd: $("#passwd").val(),		
+					plan: $("#plan").val(), 
+					money: $("#money").val(), 					
+                    transfer_enable: $("#transfer_enable").val() * 1024 * 1024 * 1024 ,
+					port: $("#port").val(), 
                     invite_num: $("#invite_num").val()
                 },
                 success:function(data){

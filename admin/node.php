@@ -26,6 +26,7 @@ $node = new Ss\Node\Node();
                                 <tr>
                                     <th>ID</th>
                                     <th>节点</th>
+								    <th>套餐 0=免费，1=VIP</th>
                                     <th>加密</th>
                                     <th>描述</th>
                                     <th>排序</th>
@@ -38,6 +39,7 @@ $node = new Ss\Node\Node();
                                     <tr>
                                         <td>#<?php echo $rs['id']; ?></td>
                                         <td> <?php echo $rs['node_name']; ?></td>
+										<td> <?php echo $rs['node_type']; ?></td>
                                         <td> <?php echo $rs['node_method']; ?></td>
                                         <td><?php echo $rs['node_info']; ?></td>
                                         <td><?php echo $rs['node_order']; ?></td>
