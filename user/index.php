@@ -109,16 +109,7 @@ $unix_time = $oo->get_last_unix_time();
 				
 				
 				<div class="col-md-6">
-                   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                   <!-- ss.ttkea.com -->
-                  <ins class="adsbygoogle"
-                       style="display:block"
-                       data-ad-client="ca-pub-0744246696096091"
-                       data-ad-slot="2966500476"
-                       data-ad-format="auto"></ins>
-                 <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                  
                 </div><!-- /.col (right) -->
 				
 				
